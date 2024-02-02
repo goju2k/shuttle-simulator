@@ -1,0 +1,29 @@
+{
+  "name": "app-shuttle-control-center-e2e",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/frontend/app-shuttle-control-center-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/frontend/app-shuttle-control-center-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "app-shuttle-control-center:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "app-shuttle-control-center:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "app-shuttle-control-center:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "implicitDependencies": ["app-shuttle-control-center"],
+  "tags": []
+}
