@@ -5,6 +5,7 @@
   "scripts": {
     "auth": "nx serve shuttle-auth-server",
     "auth:build": "nx build shuttle-auth-server",
+    "auth:image": "docker build -f Dockerfile_auth -t auth:mymy .",
     "user-app": "nx serve shuttle-user-app",
     "user-app:build": "nx build shuttle-user-app"
   },
