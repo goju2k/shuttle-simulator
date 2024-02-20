@@ -1,0 +1,24 @@
+{
+  "name": "shuttle-auth-server",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "backend/apps/shuttle-auth-server/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "shuttle-auth-server:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "shuttle-auth-server:build:development"
+        },
+        "production": {
+          "buildTarget": "shuttle-auth-server:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}
