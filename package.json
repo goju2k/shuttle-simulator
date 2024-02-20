@@ -14,11 +14,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nestjs/schematics": "^10.0.1",
     "@nx/cypress": "18.0.0-canary.20240201-8762c38",
     "@nx/eslint": "18.0.0-canary.20240201-8762c38",
     "@nx/eslint-plugin": "18.0.0-canary.20240201-8762c38",
     "@nx/jest": "18.0.0-canary.20240201-8762c38",
     "@nx/js": "18.0.0-canary.20240201-8762c38",
+    "@nx/nest": "^18.1.0-canary.20240220-003b961",
     "@nx/node": "18.0.0-canary.20240201-8762c38",
     "@nx/react": "^18.0.0-canary.20240201-8762c38",
     "@nx/vite": "18.0.0-canary.20240201-8762c38",
