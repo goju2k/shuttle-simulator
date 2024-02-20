@@ -7,7 +7,7 @@ const StyledApp = styled.div`
   // Your style here
 `;
 
-const ax = new Axios({ baseURL: '' });
+const ax = new Axios({ baseURL: import.meta.env.VITE_TARGET_SERVER_AUTH || '' });
 
 export function App() {
   return (
