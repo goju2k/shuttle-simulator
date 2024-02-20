@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "auth": "nx serve shuttle-auth-server",
-    "user-app": "nx serve shuttle-user-app"
+    "auth:build": "nx build shuttle-auth-server",
+    "user-app": "nx serve shuttle-user-app",
+    "user-app:build": "nx build shuttle-user-app"
   },
   "private": true,
   "dependencies": {
