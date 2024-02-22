@@ -8,6 +8,7 @@
     "auth:image": "docker build -f .docker/Dockerfile_auth -t auth:mymy .",
     "user-app": "nx serve shuttle-user-app",
     "user-app:build": "nx build shuttle-user-app",
+    "portal-app": "nx dev shuttle-portal-app",
     "portal-app:build": "nx build shuttle-portal-app",
     "portal-app:image": "docker build -f .docker/Dockerfile_portal -t portal:mymy .",
     "portal-app:start": "next start"
