@@ -4,8 +4,9 @@ import { useServerInsertedHTML } from 'next/navigation';
 import React, { useState } from 'react';
 import styled, { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 
-const MainLayoutRoot = styled.div`
-  padding : 10px;
+const PrivacyPolicyLayoutRoot = styled.div`
+  border: 1px solid gray;
+  padding: 20px;
 `;
 
 export function StyledComponentsRegistry({ children }: {
@@ -29,9 +30,9 @@ export function StyledComponentsRegistry({ children }: {
 
   return (
     <StyleSheetManager sheet={styledComponentsStyleSheet.instance}>
-      <MainLayoutRoot>
+      <PrivacyPolicyLayoutRoot>
         {children}
-      </MainLayoutRoot> 
+      </PrivacyPolicyLayoutRoot>
     </StyleSheetManager>
   );
 }
