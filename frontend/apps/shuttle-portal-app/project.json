@@ -1,0 +1,8 @@
+{
+  "name": "shuttle-portal-app",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "frontend/apps/shuttle-portal-app",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}

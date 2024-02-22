@@ -4,10 +4,7 @@
     "defaultBase": "master"
   },
   "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": [
       "default",
       "!{projectRoot}/.eslintrc.json",
@@ -82,6 +79,12 @@
         "style": "styled-components"
       },
       "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    },
+    "@nx/next": {
+      "application": {
         "style": "styled-components",
         "linter": "eslint"
       }
