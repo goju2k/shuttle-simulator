@@ -25,6 +25,7 @@ WORKDIR /app
 
 # copy for prod
 COPY --from=build /app/frontend/apps/shuttle-portal-app/.next /app/.next
+COPY --from=build /app/frontend/apps/shuttle-portal-app/public /app/public
 COPY --from=build /app/node_modules /app/node_modules
 COPY --from=build /app/package*.json ./
 
