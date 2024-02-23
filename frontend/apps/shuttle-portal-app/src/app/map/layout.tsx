@@ -4,12 +4,15 @@ import { StyledComponentsRegistry } from './registry';
 
 export const metadata: Metadata = { title: '지도 탐색' };
 
-export default function MapLayout({ children }: {
+export default async function MapLayout({ children }: {
   children: React.ReactNode;
 }) {
+
   return (
-    <StyledComponentsRegistry>
-      {children}
-    </StyledComponentsRegistry>
+    <>
+      <StyledComponentsRegistry>
+        {children}
+      </StyledComponentsRegistry>
+    </>
   );
 }
