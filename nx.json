@@ -57,6 +57,14 @@
         "serveTargetName": "serve",
         "serveStaticTargetName": "serve-static"
       }
+    },
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "startTargetName": "start"
+      }
     }
   ],
   "generators": {
@@ -71,6 +79,12 @@
         "style": "styled-components"
       },
       "library": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    },
+    "@nx/next": {
+      "application": {
         "style": "styled-components",
         "linter": "eslint"
       }
