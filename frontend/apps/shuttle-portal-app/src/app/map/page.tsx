@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     url: 'https://dev.shuttle.seoul.kr/map',
     title: '지도 탐색',
     description: '지도를 이용해 탐색하세요',
-    images: './sc2.png',
+    images: 'https://dev.shuttle.seoul.kr/image/sc2.png',
   }, 
 };
 
